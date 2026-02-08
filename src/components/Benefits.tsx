@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Rocket, Bot, TrendingUp } from "lucide-react";
 
 const benefits = [
@@ -23,9 +24,15 @@ const Benefits = () => {
     <section className="section-padding bg-card">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4"
+          >
             ¿Por qué elegir <span className="gradient-text">AlekAgency</span>?
-          </h2>
+          </motion.h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

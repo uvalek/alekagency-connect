@@ -1,4 +1,5 @@
-import { Megaphone, MousePointerClick, MessageSquare, CalendarCheck } from "lucide-react";
+import { motion } from "framer-motion";
+import { Megaphone, MousePointerClick, MessageSquare, CalendarCheck, ChevronDown } from "lucide-react";
 
 const steps = [
   {
@@ -29,21 +30,41 @@ const steps = [
 
 const Process = () => {
   return (
-    <section id="proceso" className="section-padding bg-background">
+    <section id="proceso" className="pt-24 pb-20 bg-white relative">
+      {/* Badge Conector - Cabalgando desde la sección anterior */}
+      <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col items-center gap-1">
+        <div className="bg-primary text-white text-[10px] md:text-xs font-bold tracking-[0.2em] px-8 py-3 rounded-full shadow-[0_10px_30px_rgba(79,70,229,0.4)] border-4 border-white uppercase flex items-center justify-center whitespace-nowrap">
+          Conoce el método ganador
+        </div>
+        <ChevronDown className="text-primary animate-bounce mt-1 drop-shadow-md" size={24} strokeWidth={3} />
+      </div>
+
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4"
+          >
             De anuncio a cliente, <span className="gradient-text">sin fricción</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+          >
             Un proceso automatizado que trabaja mientras tú te enfocas en lo importante
-          </p>
+          </motion.p>
         </div>
 
         <div className="relative">
           {/* Connection line */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-secondary -translate-y-1/2 z-0"></div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <div key={step.number} className="relative">

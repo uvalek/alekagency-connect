@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 @layer base {
   :root {
     --background: 210 40% 98%;
@@ -51,7 +49,12 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold tracking-tight;
   }
 }
@@ -79,5 +82,62 @@
 
   .section-padding {
     @apply py-20 md:py-28 px-4;
+  }
+
+  /* Deep Glow & Light Sweep Button */
+  .btn-pulse-glow {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    @apply relative overflow-hidden text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 border-0;
+
+    /* Deep Glow inicial: Sombra suave y multicapa */
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4), 0 0 30px rgba(124, 58, 237, 0.2);
+  }
+
+  .btn-pulse-glow:hover {
+    transform: translateY(-2px);
+    /* Glow intensificado */
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.6), 0 0 40px rgba(124, 58, 237, 0.4);
+    @apply opacity-95;
+  }
+
+  .btn-pulse-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent);
+    transform: skewX(-25deg);
+    animation: light-sweep 3s infinite;
+  }
+}
+
+@keyframes light-sweep {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  85% {
+    left: 200%;
+    opacity: 1;
+  }
+
+  86% {
+    left: 200%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 200%;
+    opacity: 0;
   }
 }

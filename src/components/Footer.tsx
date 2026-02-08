@@ -7,9 +7,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <span className="font-heading text-2xl font-bold text-white mb-4 block">
-              AlekAgency
-            </span>
+            <a href="/" className="mb-6 block">
+              <img
+                src="/logo-blanco.png"
+                alt="AlekAgency Logo"
+                className="h-10 w-auto"
+              />
+            </a>
             <p className="text-white/70 mb-6">
               Automatizamos tu marketing para convertir atención en clientes. Creatividad y tecnología trabajando juntas 24/7.
             </p>

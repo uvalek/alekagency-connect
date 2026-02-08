@@ -12,9 +12,18 @@ const CTASection = () => {
           <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
             Agenda una llamada gratuita y descubre cómo podemos ayudarte a escalar tu negocio
           </p>
-          <Button className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold">
-            Agendar llamada gratuita
-            <ArrowRight className="ml-2" size={20} />
+          <Button
+            className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold"
+            asChild
+          >
+            <a
+              href="https://cal.com/alek-nava-i4gvq6/30min?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agendar llamada gratuita
+              <ArrowRight className="ml-2" size={20} />
+            </a>
           </Button>
         </div>
       </div>
