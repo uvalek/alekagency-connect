@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarCheck } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -13,16 +13,18 @@ const CTASection = () => {
             Agenda una llamada gratuita y descubre cómo podemos ayudarte a escalar tu negocio
           </p>
           <Button
-            className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold"
+            className="bg-white text-primary hover:bg-white hover:scale-105 text-lg px-8 py-6 h-auto font-semibold rounded-full shadow-[0_4px_20px_rgba(255,255,255,0.3)] hover:shadow-[0_8px_30px_rgba(255,255,255,0.5)] transition-all duration-300"
             asChild
           >
             <a
               href="https://cal.com/alek-nava-i4gvq6/30min?overlayCalendar=true"
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center gap-2"
             >
+              <CalendarCheck size={20} className="shrink-0" />
               Agendar llamada gratuita
-              <ArrowRight className="ml-2" size={20} />
+              <ArrowRight size={20} />
             </a>
           </Button>
         </div>

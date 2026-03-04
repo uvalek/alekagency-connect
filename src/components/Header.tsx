@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -56,13 +56,14 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:block">
-          <Button className="btn-pulse-glow border-0 shadow-lg group" asChild>
+          <Button className="btn-pulse-glow border-0 shadow-lg group rounded-full" asChild>
             <a
               href="https://cal.com/alek-nava-i4gvq6/30min?overlayCalendar=true"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
+              <CalendarCheck size={18} className="shrink-0" />
               Agendar llamada
             </a>
           </Button>
@@ -94,14 +95,16 @@ const Header = () => {
               </a>
             ))}
             <Button
-              className="btn-pulse-glow border-0 w-full mt-4 py-6 text-lg"
+              className="btn-pulse-glow border-0 w-full mt-4 py-6 text-lg rounded-full"
               asChild
             >
               <a
                 href="https://cal.com/alek-nava-i4gvq6/30min?overlayCalendar=true"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
               >
+                <CalendarCheck size={20} className="shrink-0" />
                 Agendar llamada
               </a>
             </Button>
