@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 const logos = [
   "/logos/logo1.svg",
   "/logos/logo2.svg",
-  "/logos/logo3.svg",
-  "/logos/logo4.svg",
+  "/logos/logo3.png",
+  "/logos/logo4.png",
   "/logos/logo5.svg",
-  "/logos/logo6.svg",
+  "/logos/logo6.png",
 ];
 
 const TrustMarquee = () => {
@@ -23,9 +23,9 @@ const TrustMarquee = () => {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, visibility: "hidden" }}
-        whileInView={{ opacity: 1, visibility: "visible" }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "100px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative w-full overflow-hidden mask-fade-sides mb-0"
       >
@@ -39,6 +39,8 @@ const TrustMarquee = () => {
               <img
                 src={logo}
                 alt="Brand Partner"
+                loading="eager"
+                decoding="async"
                 className="h-10 md:h-[48px] w-auto max-w-none object-contain"
               />
             </div>
