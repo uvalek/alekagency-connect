@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    /* Paleta: #120024 · #4B0082 · #7346C6 · #B2ABF2 · #FBFFF1 */
-    --background: 77 100% 97%;
+    /* Paleta: #120024 · #4B0082 · #7346C6 · #B2ABF2 */
+    --background: 0 0% 100%;
     --foreground: 270 100% 7%;
 
     --card: 0 0% 100%;
@@ -151,7 +151,7 @@
       radial-gradient(ellipse 70% 90% at 85% 15%, rgba(75, 0, 130, 0.10) 0%, transparent 60%),
       radial-gradient(ellipse 80% 70% at 55% 85%, rgba(178, 171, 242, 0.12) 0%, transparent 65%),
       radial-gradient(circle 400px at 90% 50%, rgba(75, 0, 130, 0.06) 0%, transparent 100%),
-      linear-gradient(180deg, hsl(77 100% 97%) 0%, hsl(270 20% 96%) 40%, hsl(260 15% 97%) 70%, hsl(77 100% 97%) 100%);
+      linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(270 20% 97%) 40%, hsl(260 15% 98%) 70%, hsl(0 0% 100%) 100%);
     animation: bg-drift 18s ease-in-out infinite;
   }
 
