@@ -47,7 +47,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              className="btn-pulse-glow text-lg px-8 py-6 h-auto shadow-lg hover:shadow-slate-700/20 rounded-full"
+              className="btn-pulse-glow text-lg px-8 py-6 h-auto shadow-lg hover:shadow-purple-500/30 rounded-full"
               asChild
             >
               <a
@@ -92,7 +92,7 @@ const Hero = () => {
                     </h3>
 
                     <Button
-                      className="w-full py-6 text-lg btn-primary-gradient border-0 shadow-lg hover:shadow-slate-700/20 transition-all hover:scale-[1.02] rounded-full text-white font-medium"
+                      className="w-full py-6 text-lg btn-primary-gradient border-0 shadow-lg hover:shadow-purple-500/30 transition-all hover:scale-[1.02] rounded-full text-white font-medium"
                       asChild
                     >
                       <a
