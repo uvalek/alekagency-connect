@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Megaphone, MousePointerClick, MessageSquare, CalendarCheck, ChevronDown } from "lucide-react";
+import { Megaphone, MousePointerClick, MessageSquare, CalendarCheck } from "lucide-react";
 
 const steps = [
   {
@@ -31,13 +31,6 @@ const steps = [
 const Process = () => {
   return (
     <section id="proceso" className="pt-24 pb-20 bg-white relative">
-      {/* Badge Conector - Cabalgando desde la sección anterior */}
-      <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col items-center gap-1">
-        <div className="bg-primary text-white text-[10px] md:text-xs font-bold tracking-[0.2em] px-8 py-3 rounded-full shadow-[0_10px_30px_rgba(79,70,229,0.4)] border-4 border-white uppercase flex items-center justify-center whitespace-nowrap">
-          Conoce el método ganador
-        </div>
-        <ChevronDown className="text-primary animate-bounce mt-1 drop-shadow-md" size={24} strokeWidth={3} />
-      </div>
 
       <div className="container mx-auto">
         <div className="text-center mb-16">
