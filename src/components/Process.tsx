@@ -30,7 +30,7 @@ const steps = [
 
 const Process = () => {
   return (
-    <section id="proceso" className="pt-24 pb-20 bg-white relative">
+    <section id="proceso" className="pt-24 pb-20 relative">
 
       <div className="container mx-auto">
         <div className="text-center mb-16">
