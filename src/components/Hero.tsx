@@ -28,16 +28,16 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6 drop-shadow-lg">
             Tu negocio{" "}
-            <span className="italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-200">
+            <span className="italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-white to-slate-400">
               nunca duerme:
             </span>
             <br className="hidden md:block" />{" "}
             <span className="font-light">Automatización inteligente que</span>{" "}
-            <span className="italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-purple-300">
+            <span className="italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-white to-slate-300">
               atiende
             </span>{" "}
             <span className="font-light">mientras tú</span>{" "}
-            <span className="italic font-extrabold underline decoration-purple-400/50 underline-offset-4">
+            <span className="italic font-extrabold underline decoration-slate-400/50 underline-offset-4">
               descansas
             </span>
           </h1>
@@ -47,7 +47,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              className="btn-pulse-glow text-lg px-8 py-6 h-auto shadow-lg hover:shadow-purple-500/20 rounded-full"
+              className="btn-pulse-glow text-lg px-8 py-6 h-auto shadow-lg hover:shadow-slate-700/20 rounded-full"
               asChild
             >
               <a
@@ -92,7 +92,7 @@ const Hero = () => {
                     </h3>
 
                     <Button
-                      className="w-full py-6 text-lg btn-primary-gradient border-0 shadow-lg hover:shadow-purple-500/20 transition-all hover:scale-[1.02] rounded-full text-white font-medium"
+                      className="w-full py-6 text-lg btn-primary-gradient border-0 shadow-lg hover:shadow-slate-700/20 transition-all hover:scale-[1.02] rounded-full text-white font-medium"
                       asChild
                     >
                       <a
