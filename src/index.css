@@ -13,16 +13,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 220 55% 22%;
+    --primary: 222 58% 38%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 50% 35%;
+    --secondary: 212 52% 48%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 200 60% 45%;
+    --accent: 205 60% 52%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -30,11 +30,11 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 220 55% 22%;
+    --ring: 222 58% 38%;
 
     --radius: 1rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(220 55% 22%), hsl(210 50% 35%));
+    --gradient-primary: linear-gradient(135deg, hsl(222 58% 38%), hsl(212 52% 48%));
     --shadow-card: 0 4px 20px -4px hsl(222 47% 11% / 0.08);
     --shadow-card-hover: 0 8px 30px -4px hsl(222 47% 11% / 0.12);
   }
@@ -91,16 +91,16 @@
 
     /* Deep Glow multicapa */
     box-shadow:
-      0 4px 15px rgba(26, 39, 68, 0.5),
-      0 0 30px rgba(26, 39, 68, 0.25);
+      0 4px 15px rgba(41, 65, 120, 0.45),
+      0 0 30px rgba(41, 65, 120, 0.2);
   }
 
   .btn-pulse-glow:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow:
-      0 6px 25px rgba(26, 39, 68, 0.7),
-      0 0 50px rgba(26, 39, 68, 0.4),
-      0 0 80px rgba(26, 39, 68, 0.2);
+      0 6px 25px rgba(41, 65, 120, 0.6),
+      0 0 50px rgba(41, 65, 120, 0.35),
+      0 0 80px rgba(41, 65, 120, 0.15);
   }
 
   /* Light sweep */
@@ -146,9 +146,9 @@
     height: 100%;
     z-index: -1;
     background:
-      radial-gradient(ellipse 80% 50% at 20% 40%, rgba(26, 39, 68, 0.06) 0%, transparent 70%),
-      radial-gradient(ellipse 60% 80% at 80% 20%, rgba(45, 79, 110, 0.05) 0%, transparent 70%),
-      radial-gradient(ellipse 70% 60% at 60% 80%, rgba(26, 39, 68, 0.04) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 50% at 20% 40%, rgba(41, 65, 120, 0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 80% at 80% 20%, rgba(55, 100, 150, 0.05) 0%, transparent 70%),
+      radial-gradient(ellipse 70% 60% at 60% 80%, rgba(41, 65, 120, 0.04) 0%, transparent 70%),
       linear-gradient(180deg, hsl(210 40% 98%) 0%, hsl(220 20% 97%) 50%, hsl(210 40% 98%) 100%);
     animation: bg-drift 20s ease-in-out infinite;
   }
@@ -162,8 +162,8 @@
     height: 100%;
     z-index: -1;
     background:
-      radial-gradient(circle 600px at 70% 60%, rgba(45, 79, 110, 0.04) 0%, transparent 100%),
-      radial-gradient(circle 500px at 30% 70%, rgba(26, 39, 68, 0.03) 0%, transparent 100%);
+      radial-gradient(circle 600px at 70% 60%, rgba(55, 100, 150, 0.04) 0%, transparent 100%),
+      radial-gradient(circle 500px at 30% 70%, rgba(41, 65, 120, 0.03) 0%, transparent 100%);
     animation: bg-drift-reverse 25s ease-in-out infinite;
   }
 }
