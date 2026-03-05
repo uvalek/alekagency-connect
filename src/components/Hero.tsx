@@ -27,9 +27,18 @@ const Hero = () => {
       <div className="relative z-20 container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6 drop-shadow-lg">
-            Automatizamos tu marketing para{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-blue-50">
-              convertir atención en clientes
+            Tu negocio{" "}
+            <span className="italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-200">
+              nunca duerme:
+            </span>
+            <br className="hidden md:block" />{" "}
+            <span className="font-light">Automatización inteligente que</span>{" "}
+            <span className="italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-purple-300">
+              atiende
+            </span>{" "}
+            <span className="font-light">mientras tú</span>{" "}
+            <span className="italic font-extrabold underline decoration-purple-400/50 underline-offset-4">
+              descansas
             </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto drop-shadow-md">
