@@ -32,7 +32,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center">
           <img
-            src={isScrolled ? "/logo-negra.png" : "/logo-blanco.png"}
+            src={isScrolled ? "/logo-negra.svg" : "/logo-blanco.svg"}
             alt="AlekAgency Logo"
             className="h-12 w-auto drop-shadow-md transition-opacity duration-300"
           />
