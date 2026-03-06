@@ -34,7 +34,7 @@ const Header = () => {
           <img
             src={isScrolled ? "/logo-negra.svg" : "/logo-blanco.svg"}
             alt="AlekAgency Logo"
-            className="h-16 md:h-20 w-auto drop-shadow-md transition-opacity duration-300"
+            className="h-20 md:h-28 w-auto drop-shadow-md transition-opacity duration-300"
           />
         </a>
 
